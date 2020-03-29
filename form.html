@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <style type="text/css">
+        body{
+            padding: 20px;
+        }
+        p{
+            font-size: 20px;
+            text-align: left;
+        }
+        input{
+            height: 20px;
+        }
+        button {
+            height: 20px;
+            width: 50px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+   <form action="/message" method="POST">
+        <p>Please enter a message here:</p>
+        <p>
+            <label for="message">Message:</label>
+            <input type="text" name="message" placeholder="Enter your message" required>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
